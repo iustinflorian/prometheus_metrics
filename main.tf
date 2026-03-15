@@ -36,7 +36,7 @@ resource "aws_security_group" "prometheus_sg" {
 }
 
 resource "aws_instance" "prometheus_server" {
-  ami           = "ami-0faab6bdbac9486fb"
+  ami           = "ami-0974a2c5ddf10f442"
   instance_type = "t3.micro"
   vpc_security_group_ids = [aws_security_group.prometheus_sg.id]
 
