@@ -23,9 +23,9 @@ You don't need to manually install Prometheus or Grafana. The entire stack runs 
 2. Search for IAM in the search bar and click on it.
 3. In the left sidebar, click on **Users** and select your user (or create a new one with `AdministratorAccess`).
 4. Go to the Security credentials tab.
-5. Scroll down to the Access keys section and click Create access key
-6. Select Command Line Interface (CLI as the use case, check the confirmation box, and click Next
-7. **IMPORTANT** Copy your Access Key ID and Secret Access Key Download the `.csv` file, as this is the only time you will see the secret key.
+5. Scroll down to the Access keys section and click Create access key.
+6. Select Command Line Interface (CLI).
+7. **IMPORTANT** I advise you to download the `.csv` file, as this is the only time you will see the secret key.
 8. Run the configuration command (in terminal):
 ```
 aws configure
@@ -33,7 +33,7 @@ aws configure
 9. For default output format, type 'json'.
 
 #### **C. Generate SSH Key Pair**
-- Go to the AWS Console -> EC2 -> Network & Security -> Key Pairs
+- Go to the AWS Console -> EC2 -> Network & Security -> Key Pairs.
 - Create a new key pair named `prometheus-key`.
 - Download the `.pem` file and keep it in a secure location.
 
